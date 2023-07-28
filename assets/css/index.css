@@ -404,10 +404,19 @@ input {
 }
 
 /*=============== DISCOVER ===============*/
+.discover__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+  gap: 20px;/* Adjust this height value based on your layout */
+}
+
 .discover__card {
   position: relative;
-  width: 200px;
-  overflow: var(--img-hidden);
+  width: 300px; /* Increase the width to make the images bigger */
+  overflow: hidden; /* To crop the images if they have different aspect ratios */
+  margin-right: 20px; /* Add some spacing between the images */
 }
 
 .discover__data {
@@ -422,27 +431,37 @@ input {
 }
 
 .discover__title {
-  font-size: var(--h3-font-size);
-  margin-bottom: var(--mb-0-25);
+  font-size: 20px;
+  margin-bottom: 0px;
 }
 
 .discover__description {
   display: block;
-  font-size: var(--smaller-font-size);
+  font-size: 15px;
 }
 
 .discover__img {
   transition: var(--img-transition);
+  width: 100%; /* Make the images fill the entire width of the .discover__card */
+  height: auto;
+  margin-bottom: 8px; /* Automatically adjust the height to maintain the aspect ratio */
 }
 
 .discover__img:hover {
   transform: var(--img-scale);
 }
 
-.swiper-container-3d .swiper-slide-shadow-left,
-.swiper-container-3d .swiper-slide-shadow-right {
-  background-image: none;
+.discover__img.enlarged {
+  width: 100%; /* Modify this value as needed for the enlarged size */
+  height: auto; /* Maintain the aspect ratio */
+  max-width: none; /* Remove the max-width property to allow full-width */
 }
+
+
+
+
+
+
 
 /*=============== EXPERIENCE ===============*/
 .experience__container {
@@ -766,17 +785,7 @@ margin-top: 2px;
   .experience__overlay:nth-child(2) {
     width: 160px;
   }
-  .subscribe__bg {
-    background: none;
-    padding: 0;
-  }
-  .subscribe__container {
-    background-color: var(--first-color-second);
-    padding: 3.5rem 0;
-  }
-  .subscribe__input {
-    padding: 0 .5rem;
-  }
+  
   .footer__rights {
     flex-direction: row;
     justify-content: space-between;
