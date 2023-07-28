@@ -50,8 +50,6 @@ let swiper = new swiper(".discover__container", {
         rotate: 0,
     },
 })
-function toggleImageSize(img) {
-    img.classList.toggle("enlarged");
-  }
+
 
 
