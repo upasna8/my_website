@@ -20,7 +20,7 @@
   --scroll-bar-color: #E5E5E5;
   --scroll-thumb-color: #C0C0C0;
 
-  /*========== Font and typography ==========*/
+  /* Font and typography */
   --body-font: 'Open Sans', sans-serif;
   --title-font: 'Raleway', sans-serif;
   --biggest-font-size: 2.5rem;
@@ -31,11 +31,11 @@
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
 
-  /*========== Font weight ==========*/
+  /* Font weight */
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /*========== Margenes Bottom ==========*/
+  /* Margenes Bottom */
   --mb-0-25: .25rem;
   --mb-0-5: .5rem;
   --mb-0-75: .75rem;
@@ -45,11 +45,11 @@
   --mb-2: 2rem;
   --mb-2-5: 2.5rem;
 
-  /*========== z index ==========*/
+  /* z index */
   --z-tooltip: 10;
   --z-fixed: 100;
 
-  /*========== Hover overlay ==========*/
+  /* Hover overlay */
   --img-transition: .3s;
   --img-hidden: hidden;
   --img-scale: scale(1.2);
